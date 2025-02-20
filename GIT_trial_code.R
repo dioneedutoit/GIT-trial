@@ -28,7 +28,7 @@ data <- data %>%
 
 
 #save new data as csv
-write.csv(data, "tidy_data.csv", row.names = FALSE)
+write.csv(data, "tidy_data1.csv", row.names = FALSE)
 
 
 #scatter plot showing relationship between stipe length and frond length
