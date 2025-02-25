@@ -1,7 +1,7 @@
 install.packages("tidyverse")
 library("tidyverse")
 
-data <- read.csv("tidy_data.csv")
+data <- read.csv("raw_data.csv")
 
 #to clean column headers, remove spaces and capitals
 install.packages("janitor")
@@ -47,3 +47,4 @@ ggplot(data, aes(x = factor(depth_m), y = total_length_cm, fill = factor(depth_m
 
 #ttest comparing total length between harvested and non-harvested kelp
 t.test(total_length_cm ~ harvested_non_harvested, data = data)
+
